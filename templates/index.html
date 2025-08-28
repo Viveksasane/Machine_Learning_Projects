@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Performance Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-page">
+
+  <div class="overlay">
+    <h1>Welcome to Student Performance Predictor</h1>
+    <p>
+      This project predicts the <strong>Math Score</strong> of students 
+      based on their demographics, parental education, and performance 
+      in Reading & Writing.
+    </p>
+
+    <!-- Button to open prediction form -->
+    <a href="{{ url_for('predict_datapoint') }}" class="btn-primary">
+      Go to Prediction Form
+    </a>
+  </div>
+
+</body>
+</html>
+
